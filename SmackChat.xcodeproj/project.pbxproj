@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		3063F99A24AFC1AD007D12B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F99924AFC1AD007D12B8 /* AppDelegate.swift */; };
 		3063F99C24AFC1AD007D12B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F99B24AFC1AD007D12B8 /* SceneDelegate.swift */; };
-		3063F99E24AFC1AD007D12B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3063F99D24AFC1AD007D12B8 /* ViewController.swift */; };
 		3063F9A124AFC1AD007D12B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3063F99F24AFC1AD007D12B8 /* Main.storyboard */; };
 		3063F9A324AFC1B0007D12B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3063F9A224AFC1B0007D12B8 /* Assets.xcassets */; };
 		3063F9A624AFC1B0007D12B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3063F9A424AFC1B0007D12B8 /* LaunchScreen.storyboard */; };
 		3089B16024B0A6FD00E86E80 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3089B15F24B0A6FD00E86E80 /* SWRevealViewController.m */; };
+		3089B16524B0AA0600E86E80 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3089B16424B0AA0600E86E80 /* ChatVC.swift */; };
+		3089B16724B0AA1600E86E80 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3089B16624B0AA1600E86E80 /* ChannelVC.swift */; };
+		3089B16924B0BC6000E86E80 /* GradientRearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3089B16824B0BC6000E86E80 /* GradientRearView.swift */; };
 		E3A8F4CDDC2FDA3607173AB6 /* Pods_SmackChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28158568E8911642B84BEFB6 /* Pods_SmackChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +25,6 @@
 		3063F99624AFC1AD007D12B8 /* SmackChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmackChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3063F99924AFC1AD007D12B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3063F99B24AFC1AD007D12B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3063F99D24AFC1AD007D12B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3063F9A024AFC1AD007D12B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3063F9A224AFC1B0007D12B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3063F9A524AFC1B0007D12B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,9 @@
 		3089B15D24B0A6FC00E86E80 /* SmackChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmackChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		3089B15E24B0A6FC00E86E80 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		3089B15F24B0A6FD00E86E80 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3089B16424B0AA0600E86E80 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		3089B16624B0AA1600E86E80 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		3089B16824B0BC6000E86E80 /* GradientRearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRearView.swift; sourceTree = "<group>"; };
 		9587A6F9611A41F61E9A1A05 /* Pods-SmackChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackChat.release.xcconfig"; path = "Target Support Files/Pods-SmackChat/Pods-SmackChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,10 +71,12 @@
 		3063F99824AFC1AD007D12B8 /* SmackChat */ = {
 			isa = PBXGroup;
 			children = (
+				3089B16324B0A9E300E86E80 /* Model */,
+				3089B16224B0A9DD00E86E80 /* View */,
+				3089B16124B0A9C800E86E80 /* Controller */,
 				3089B15C24B0A6D300E86E80 /* Supporting Files */,
 				3063F99924AFC1AD007D12B8 /* AppDelegate.swift */,
 				3063F99B24AFC1AD007D12B8 /* SceneDelegate.swift */,
-				3063F99D24AFC1AD007D12B8 /* ViewController.swift */,
 				3063F99F24AFC1AD007D12B8 /* Main.storyboard */,
 				3063F9A224AFC1B0007D12B8 /* Assets.xcassets */,
 				3063F9A424AFC1B0007D12B8 /* LaunchScreen.storyboard */,
@@ -87,6 +93,30 @@
 				3089B15D24B0A6FC00E86E80 /* SmackChat-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3089B16124B0A9C800E86E80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3089B16424B0AA0600E86E80 /* ChatVC.swift */,
+				3089B16624B0AA1600E86E80 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3089B16224B0A9DD00E86E80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3089B16824B0BC6000E86E80 /* GradientRearView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3089B16324B0A9E300E86E80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		522350FF0A94B3849CA19787 /* Frameworks */ = {
@@ -222,10 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3063F99E24AFC1AD007D12B8 /* ViewController.swift in Sources */,
+				3089B16924B0BC6000E86E80 /* GradientRearView.swift in Sources */,
+				3089B16524B0AA0600E86E80 /* ChatVC.swift in Sources */,
 				3063F99A24AFC1AD007D12B8 /* AppDelegate.swift in Sources */,
 				3063F99C24AFC1AD007D12B8 /* SceneDelegate.swift in Sources */,
 				3089B16024B0A6FD00E86E80 /* SWRevealViewController.m in Sources */,
+				3089B16724B0AA1600E86E80 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
